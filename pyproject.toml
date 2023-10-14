@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "schematic"
+name = "schema-check"
 version = "0.1.0"
-description = "Python library for basic data validation"
+description = "Define and enforce schema against user-provided JSON-like data"
 readme = "README.md"
 license = "MIT"
-homepage = "https://github.com/glentner/schematic"
-documentation = "https://github.com/glentner/schematic"
-repository = "https://github.com/glentner/schematic"
+homepage = "https://github.com/glentner/schema-check"
+documentation = "https://github.com/glentner/schema-check"
+repository = "https://github.com/glentner/schema-check"
 authors = [
     "Geoffrey Lentner <glentner@purdue.edu>"
 ]
@@ -34,6 +34,5 @@ build-backend = "poetry.core.masonry.api"
 addopts = ["--strict-markers", ]
 markers = [
     "unit: Unit tests are short, interface driven tests on discrete components.",
-    "integration: Integration tests are often longer and deal with the interaction between systems.",
     "parameterize: Place holder for parameterized tests (not a real type).",
 ]

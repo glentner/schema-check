@@ -17,7 +17,7 @@ from importlib.metadata import version
 __all__ = ['SchemaError', 'SchemaDefinitionError', 'ListSchema', 'DictSchema', 'Size', ]
 
 # metadata
-__version__ = version('schematic')
+__version__ = version('schema_check')
 
 
 class SchemaError(Exception):
