@@ -24,7 +24,6 @@ python = ">=3.10,<4.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.2"
-hypothesis = "^6.87.4"
 ipython = "^8.16.1"
 
 [build-system]
