@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "schematic"
+version = "0.1.0"
+description = "Python library for basic data validation"
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/glentner/schematic"
+documentation = "https://github.com/glentner/schematic"
+repository = "https://github.com/glentner/schematic"
+authors = [
+    "Geoffrey Lentner <glentner@purdue.edu>"
+]
+keywords = ["data", "validation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+hypothesis = "^6.87.4"
+ipython = "^8.16.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = ["--strict-markers", ]
+markers = [
+    "unit: Unit tests are short, interface driven tests on discrete components.",
+    "integration: Integration tests are often longer and deal with the interaction between systems.",
+    "parameterize: Place holder for parameterized tests (not a real type).",
+]
